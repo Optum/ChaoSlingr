@@ -1,0 +1,27 @@
+ChaoSlingr
+Copyright 2017 Optum
+
+Project Description:
+====================
+ChaoSlingr: Introducing Security based Chaos Testing – “Security is Chaotic – Drive out failure and build software that is truly rugged
+with Security Chaos Engineering”
+
+ChaoSlingr is a Security Chaos Engineering Tool focused primarily on the experimentation on AWS Infrastructure to bring system security
+weaknesses to the forefront.
+
+Authors:
+Aaron Rinehart (@AARonSTeneo)
+Grayson Brewer (@egb2016)
+Josh Gorton (@Jgorton612928)
+Amy L Schoen (@amyschoen)
+Mehul Shah (@mehul0sejal)
+Shawn Ertel (@SHA34)
+Samuel W Roden (@sbroden)
+Joseph P Niquette (@Joeyn414)
+Stephen M Klugherz (@Smklugherz)
+Alex R Nielsen (@anielse2)
+Arun K Singh (@Oarusoft)
+Rajitha Ramasayam (@rajitha-ramasayam)
+David W Cloninger
+Mike Zhou (@MichaelLiZhou)
+Dan Brock (@dbrock14)

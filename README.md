@@ -12,7 +12,7 @@ Our mission is to address security weaknesses proactively, going beyond the reac
 
 ## Contributing to the Project
 
-The ChaoSlingr team is open to contributions to our project.  For more details, see our [Contribution Guide](CONTRIBUTING.md).
+The ChaoSlingr team is open to contributions to our project.  For more details, see our [Contribution Guide](CONTRIBUTING.md) and join the discussion on [Slack](https://chaoslingr.slack.com).
 
 ## Original Contributors
 
@@ -65,8 +65,5 @@ The ChaoSlingr team is open to contributions to our project.  For more details, 
 * Jeff Sivori
 * Marcus Maday
 
-## Community
-
-Join the discussion on [Slack](https://chaoslingr.slack.com)
 
 

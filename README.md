@@ -28,7 +28,7 @@ The ChaoSlingr team is open to contributions to our project.  For more details, 
 * Alex R Nielsen (@anielse2)
 * Arun K Singh (@Oarusoft)
 * Rajitha Ramasayam (@rajitha-ramasayam)
-* David W Cloninger
+* David W Cloninger (@dcloninger)
 * Mike Zhou (@MichaelLiZhou)
 * Dan Brock (@dbrock14)
 

@@ -36,9 +36,9 @@ The ChaoSlingr team is open to contributions to our project.  For more details, 
 
 * John Garner
 * Sean O'Neil
-* Patrick E Bergstrom
+* Patrick E Bergstrom (@IAmPatrickB)
 * Scott Maciej
-* Magnus J Hedemark
+* Magnus J Hedemark (@magnus919)
 * Kevin Nelson (@pkn4645)
 * Sridhar R
 * Michael R Baker

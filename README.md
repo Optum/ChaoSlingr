@@ -64,3 +64,9 @@ The ChaoSlingr team is open to contributions to our project.  For more details, 
 * Nicholas S Kerling
 * Jeff Sivori
 * Marcus Maday
+
+## Community
+
+Join the discussion on [Slack](https://chaoslingr.slack.com)
+
+

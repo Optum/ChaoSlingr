@@ -60,7 +60,7 @@ The ChaoSlingr team is open to contributions to our project.  For more details, 
 * Tomo Lennox
 * Norman O'Neal
 * Henry B Kono
-* Zachary S Brown
+* Zachary S Brown (@ZacharySBrown)
 * Nicholas S Kerling
 * Jeff Sivori
 * Marcus Maday

@@ -7,6 +7,4 @@ Create a new CloudWatch alarm. Select the Custom Metric, CoudTrailMetrics. Selec
 
 ![alt text](https://github.com/Optum/ChaoSlingr/blob/trackr_documentation/docs/trackr-rule.png)
 
-Go to Lambda function and add trigger, CloudWatch Events, and use the CloudWatch Rule created earlier.
-
-<---Lambda Function Description--->
+Go to the Trackr Lambda function and add trigger, CloudWatch Events, and use the CloudWatch Rule created earlier.

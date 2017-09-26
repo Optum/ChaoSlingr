@@ -1,6 +1,4 @@
-Trackr
-
----Initial Setup---
+#Trackr Initial Setup
 
 Create a new CoudTrail for Trackr.
 

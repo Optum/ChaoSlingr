@@ -28,7 +28,7 @@ The ChaoSlingr team is open to contributions to our project.  For more details, 
 * Alex R Nielsen (@anielse2)
 * Arun K Singh (@Oarusoft)
 * Rajitha Ramasayam (@rajitha-ramasayam)
-* David W Cloninger
+* David W Cloninger (@dcloninger)
 * Mike Zhou (@MichaelLiZhou)
 * Dan Brock (@dbrock14)
 
@@ -36,9 +36,9 @@ The ChaoSlingr team is open to contributions to our project.  For more details, 
 
 * John Garner
 * Sean O'Neil
-* Patrick E Bergstrom
-* Scott Maciej
-* Magnus J Hedemark
+* Patrick E Bergstrom (@IAmPatrickB)
+* Scott Maciej (@sgm44)
+* Magnus J Hedemark (@magnus919)
 * Kevin Nelson (@pkn4645)
 * Sridhar R
 * Michael R Baker
@@ -60,11 +60,8 @@ The ChaoSlingr team is open to contributions to our project.  For more details, 
 * Tomo Lennox
 * Norman O'Neal
 * Henry B Kono
-* Zachary S Brown
+* Zachary S Brown (@ZacharySBrown)
 * Nicholas S Kerling
 * Jeff Sivori
 * Marcus Maday
 * Joel E Carlson (@joelelmercarlson)
-
-
-

@@ -65,6 +65,3 @@ The ChaoSlingr team is open to contributions to our project.  For more details, 
 * Jeff Sivori
 * Marcus Maday
 * Joel E Carlson (@joelelmercarlson)
-
-
-

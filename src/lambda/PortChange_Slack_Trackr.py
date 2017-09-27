@@ -21,13 +21,15 @@ def lambda_handler(event, context):
             protocols.append("UDP")
         elif item['ipProtocol'] == 6:
             protocols.append("TCP")
+        elif item['ipProtocol'] == -1:
+            protocols.append("All Protocols")
         else:
             protocols.append(item['ipProtocol'])
     
         if item['toPort'] == item['fromPort']:
             ports.append(item['toPort'])
         else:
-            ranges.append(item['fromPort'] + '-' + item['toPort'])
+            ports.append('{}-{}'.format(item['fromPort'], item['toPort']))
         ranges.append(item['ipRanges']['items'][0]['cidrIp'])
     if 80 in ports or 443 in ports or 25 in ports or 465 in ports:
         severity = 'good'

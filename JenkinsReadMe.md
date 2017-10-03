@@ -2,7 +2,7 @@
 This repository has the Jenkinsfile that can be used to deploy the lambda functions to aws.
 Steps to create your own jenkins job
 ### Step1:
-  Create a pipeline job in your jenkins instance and provide the github repository and credentials to access the jenkinsfile.
+  Install AWS Lambda Plugin in your jenkins. Create a pipeline job in your jenkins instance and provide the github repository and credentials to access the jenkinsfile.
 ### Step2:
   Create a JenkinsConfig file and add all the configuration properties of your aws instance.
   Example file is provided in this repository.

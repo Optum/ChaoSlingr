@@ -1,0 +1,7 @@
+artifactLocation=src/lambda
+awsAccessKeyId=YourAWSAccessKey
+awsRegion=YourAWSRegion
+description=Deploy Lambda from Jenkins
+memorySize=MemorySizeForLambda
+role=RoleForLambda
+runtime=LambdaRuntime

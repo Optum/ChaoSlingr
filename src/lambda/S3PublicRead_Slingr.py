@@ -7,11 +7,29 @@ import time
 s3 = boto3.client('s3')
 
 def lambda_handler(event, context):
-    bucket_name = 'publicReadable'
+    # print even for debuggin
+    print("event="event)
 
     # Create benign S3 bucket
-    create_response = s3.create_bucket(ACL='private', Bucket=bucket_name, CreateBucketConfiguration={'LocationConstraint': 'us-east-2'})
-    print('create_response = ', create_response)
+    #create_response = s3.create_bucket(ACL='private', Bucket=bucket_name, CreateBucketConfiguration={'LocationConstraint': 'us-east-2'})
+    #print('create_response = ', create_response)
+
+    if 'bucket_name' in event:
+        try:
+            data = ec2.authorize_security_group_ingress(
+                GroupId= event['SecurityGroupId'],
+                IpPermissions=[
+                    {'IpProtocol': event['IpProtocol'],
+                    'FromPort': event['FromPort'],
+                    'ToPort': event['ToPort'],
+                    'IpRanges': event['IpRanges']
+                    }
+                ])
+            print('Ingress Successfully Set %s' % data)
+        except ClientError as e:
+            print(e)
+    else:
+        print("One or more parameters are missing. Nothing to do.")
 
     # Make benign S3 bucket publicly visible
     config_response = s3.put_bucket_acl(Bucket=bucket_name, ACL='public-read-write')

@@ -1,0 +1,20 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Testing generatr funciton
+Resources:
+  generatrFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: PortChange_Generatr.lambda_handler
+      Runtime: python3.6
+      CodeUri: ../../src/lambda/portchange/
+      Tags: 
+        createdBy: michael.zhou@michael.com
+  slingrFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: PortChange_Slingr.lambda_handler
+      Runtime: python3.6
+      CodeUri: ../../src/lambda/portchange/ 
+      Tags:
+        createdBy: michael.zhou@michael.com

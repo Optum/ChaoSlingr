@@ -1,2 +1,3 @@
 awscli==1.11.157
 boto3==1.4.7
+localstack==0.8.1

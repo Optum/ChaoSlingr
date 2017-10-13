@@ -9,7 +9,7 @@ You will need installed on your workstation docker, node, and python
 2. `virtualenv hacked`
 3. `source hacked/bin/activate`
 4. `pip install localstack`
-5. `npm install -g aws-sam-local'
+5. `npm install -g aws-sam-local`
 6. `localstack start` or if you want to run in background `localstack start &`
 7. `aws --endpoint-url=http://localhost:4572 s3api create-bucket --bucket test-bucket --region us-east-1` (you just made your first AWS call!)
 8. `cd test/bucketpolicy`

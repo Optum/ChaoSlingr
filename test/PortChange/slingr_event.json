@@ -1,0 +1,9 @@
+{
+	"SecurityGroupId": "sg-245e834c",
+	"IpProtocol": "tcp",
+	"FromPort": 19984,
+	"ToPort": 19984,
+	"IpRanges": [{
+		"CidrIp": "0.0.0.0/0"
+	}]
+}

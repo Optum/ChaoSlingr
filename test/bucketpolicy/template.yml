@@ -1,0 +1,12 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Testing generatr funciton
+Resources:
+  slingrFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: s3_policy_slingr.lambda_handler
+      Runtime: python3.6
+      CodeUri: ../../src/lambda/bucketpolicy/ 
+      Tags:
+        createdBy: michael.zhou@michael.com

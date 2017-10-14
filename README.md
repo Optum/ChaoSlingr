@@ -9,15 +9,18 @@ Questions: come to our booth or ask questions @ https://chaoslingr.slack.com
 
 # How to begin
 You will need docker, node, and python installed on your workstation 
-1. `git clone -b hackru https://github.com/Optum/ChaoSlingr.git`
+1. `git clone -b hackRU https://github.com/Optum/ChaoSlingr.git`
 2. `virtualenv hacked`
 3. `source hacked/bin/activate`
 4. `pip install localstack`
 5. `npm install -g aws-sam-local`
 6. `localstack start` or if you want to run in background `localstack start &`
 7. `aws --endpoint-url=http://localhost:4572 s3api create-bucket --bucket test-bucket --region us-east-1` (you just made your first AWS call!)
-8. `cd test/bucketpolicy`
-9. `sam local invoke slingrFunction -e slingr_event.json` (just ran your first experiment!)
+8. `cd ChaoSlingr/test/bucketpolicy/`
+9. `sam local invoke slingrFunction -e slingr_event.json` 
+
+Cool you just ran your first experiment. What should of happened is output like this
+![Errored Out](./docs/error.png)
 
 # If you found AWS Credit begin by
 Find some AWS credit and make your own account to move from local env to public cloud. 

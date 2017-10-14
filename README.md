@@ -18,6 +18,19 @@ You will need installed on your workstation docker, node, and python
 # If you found AWS Credit begin by
 Find some AWS credit and make your own account to move from local env to public cloud. 
 
+### The Fast Deployment Test
+1. `git clone -b hackru https://github.com/Optum/ChaoSlingr.git`
+2. `cd src/lambda/bucketpolicy`
+3. `pip install awscli`
+4. `aws cloudformation deploy --template-file fast_template.yml --stack-name chaostest --capabilities CAPABILITY_IAM`
+
+### Using SAM
+1. `git clone -b hackru https://github.com/Optum/ChaoSlingr.git`
+2. `cd src/lambda/bucketpolicy`
+3. `npm install -g aws-sam-local`
+4. `sam package --template-file template.yml --s3-bucket <ADD_YOUR_BUCKET_HERE> --output-template-file packaged.yaml`
+5. `sam deploy --template-file ./packaged.yaml --stack-name chaostest --capabilities CAPABILITY_IAM`
+
 # ChaoSlingr: Introducing Security into Chaos Testing
 ChaoSlingr is a Security Chaos Engineering Tool focused primarily on the experimentation on AWS Infrastructure to bring system security weaknesses to the forefront.
 

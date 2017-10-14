@@ -19,7 +19,7 @@ You will need docker, node, and python installed on your workstation
 
 # If you found AWS Credit begin by
 Find some AWS credit and make your own account to move from local env to public cloud. 
-You will need 
+
 ### Using SAM
 1. `git clone -b hackru https://github.com/Optum/ChaoSlingr.git`
 2. `npm install -g aws-sam-local`

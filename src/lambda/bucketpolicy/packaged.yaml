@@ -1,0 +1,39 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Testing generatr funciton
+Resources:
+  generatrFunction:
+    DependsOn: slingrFunction
+    Properties:
+      CodeUri: s3://michaeldeploy/bf8c0daba15e35fc008e54e53a953fec
+      Environment:
+        Variables:
+          slingr:
+            Fn::Select:
+            - 6
+            - Fn::Split:
+              - ':'
+              - Fn::GetAtt:
+                - slingrFunction
+                - Arn
+      Handler: s3_policy_generatr.lambda_handler
+      Policies:
+      - AWSLambdaExecute
+      - AmazonS3ReadOnlyAccess
+      - AWSLambdaRole
+      Runtime: python3.6
+      Tags:
+        createdBy: michael.michael@michael.com
+      Timeout: 15
+    Type: AWS::Serverless::Function
+  slingrFunction:
+    Properties:
+      CodeUri: s3://michaeldeploy/bf8c0daba15e35fc008e54e53a953fec
+      Handler: s3_policy_slingr.lambda_handler
+      Policies:
+      - AWSLambdaExecute
+      Runtime: python3.6
+      Tags:
+        createdBy: michael.zhou@michael.com
+      Timeout: 15
+    Type: AWS::Serverless::Function
+Transform: AWS::Serverless-2016-10-31

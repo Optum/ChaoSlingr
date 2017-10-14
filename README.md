@@ -1,7 +1,9 @@
 ![ChaoSlingr Diagram](./docs/choas.jpg)
 
 # HACKRU challenge
-Best pull request for a feature or experiment (deadline is Sunday)
+Best pull request for a feature or experiment (deadline is Sunday) 
+
+Some initial ideas can be found @ https://github.com/Optum/ChaoSlingr/projects/1 or look for branches prefixed with hackru_ we will be hacking our own project this weekend
 
 Questions: come to our booth or ask questions @ https://chaoslingr.slack.com
 

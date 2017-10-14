@@ -4,7 +4,7 @@
 Best pull request for a feature or experiment (deadline is Sunday)
 
 # How to begin
-You will need installed on your workstation docker, node, and python
+You will need docker, node, and python installed on your workstation 
 1. `git clone -b hackru https://github.com/Optum/ChaoSlingr.git`
 2. `virtualenv hacked`
 3. `source hacked/bin/activate`
@@ -17,13 +17,12 @@ You will need installed on your workstation docker, node, and python
 
 # If you found AWS Credit begin by
 Find some AWS credit and make your own account to move from local env to public cloud. 
-
+You will need 
 ### Using SAM
 1. `git clone -b hackru https://github.com/Optum/ChaoSlingr.git`
-2. `cd src/lambda/bucketpolicy`
-3. `npm install -g aws-sam-local`
-4. `sam package --template-file template.yml --s3-bucket s3://michaeldeploy --output-template-file packaged.yaml`
-5. `sam deploy --template-file ./packaged.yaml --stack-name chaostest --capabilities CAPABILITY_IAM`
+2. `npm install -g aws-sam-local`
+3. `cd src/lambda/bucketpolicy`
+4. `sam deploy --template-file ./packaged.yaml --stack-name chaostest --capabilities CAPABILITY_IAM`
 
 # ChaoSlingr: Introducing Security into Chaos Testing
 ChaoSlingr is a Security Chaos Engineering Tool focused primarily on the experimentation on AWS Infrastructure to bring system security weaknesses to the forefront.

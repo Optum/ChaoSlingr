@@ -8,6 +8,8 @@ Some initial ideas can be found @ https://github.com/Optum/ChaoSlingr/projects/1
 Questions: come to our booth or ask questions @ https://chaoslingr.slack.com
 
 # How to begin
+The first experiment is about trying to access an S3 Bucket (object store file system) where you shouldn't have access to because there should be bucket policies denying such upload. 
+
 You will need docker, node, and python installed on your workstation 
 1. `git clone -b hackRU https://github.com/Optum/ChaoSlingr.git`
 2. `virtualenv hacked`

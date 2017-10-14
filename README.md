@@ -3,6 +3,8 @@
 # HACKRU challenge
 Best pull request for a feature or experiment (deadline is Sunday)
 
+Questions: come to our booth or ask questions @ https://chaoslingr.slack.com
+
 # How to begin
 You will need docker, node, and python installed on your workstation 
 1. `git clone -b hackru https://github.com/Optum/ChaoSlingr.git`

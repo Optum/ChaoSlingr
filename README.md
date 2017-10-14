@@ -5,7 +5,7 @@ Best pull request for a feature or experiment (deadline is Sunday)
 
 Some initial ideas can be found @ https://github.com/Optum/ChaoSlingr/projects/1 or look for branches prefixed with hackru_ we will be hacking our own project this weekend
 
-Questions: come to our booth or ask questions @ https://chaoslingr.slack.com
+Questions: come to our booth or ask questions @ ![Slack](https://join.slack.com/t/chaoslingr/shared_invite/enQtMjQzNzc0NDkwMDU0LTU3ZTljM2RhMjU3MTU5MGMzZmVjZjI4ZTU4NjkxM2VlOWNhYzhhYzM0YjhjYzNhZDhiMDIzMmM4M2M1ZWJlZTE) or ask on hackru slack
 
 # AWS Quickest method
 Find some AWS credit and make your own account to move from local env to public cloud. 

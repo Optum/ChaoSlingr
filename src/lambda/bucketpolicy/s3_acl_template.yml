@@ -5,7 +5,7 @@ Resources:
   slingrFunction:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: s3_policy_slingr.lambda_handler
+      Handler: s3_acl_slingr.lambda_handler
       Runtime: python3.6
       CodeUri: . 
       Tags:
@@ -17,7 +17,7 @@ Resources:
     Type: AWS::Serverless::Function
     DependsOn: slingrFunction
     Properties:
-      Handler: s3_policy_generatr.lambda_handler
+      Handler: s3_acl_generatr.lambda_handler
       Runtime: python3.6
       CodeUri: .
       Tags:

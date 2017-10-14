@@ -13,11 +13,14 @@ The first experiment is about trying to access an S3 Bucket (object store file s
 You will need docker, node, and python installed on your workstation 
 1. `git clone -b hackRU https://github.com/Optum/ChaoSlingr.git`
 2. `virtualenv hacked`
-3. `source hacked/bin/activate`
+3. `source hacked/bin/activate` 
+    - if using a windows cmd `hacked\Scripts\activate`
 4. `pip install localstack`
 5. `npm install -g aws-sam-local`
-6. `localstack start` or if you want to run in background `localstack start &`
+6. `localstack start` or if you want to run in background `localstack start &` 
+    - if using windows cmd `python hacked\Scripts\localstack start --docker`
 7. `aws --endpoint-url=http://localhost:4572 s3api create-bucket --bucket test-bucket --region us-east-1` (you just made your first AWS call!)
+    - check with `aws --endpoint-url=http://localhost:4572 s3 ls` and you should see something like `2006-02-03 11:45:09 test-bucket`
 8. `cd ChaoSlingr/test/bucketpolicy/`
 9. `sam local invoke slingrFunction -e slingr_event.json` 
 

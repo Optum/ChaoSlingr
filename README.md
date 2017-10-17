@@ -1,3 +1,5 @@
+![ChaoSlingrLogo](./docs/ChaoSlingrLogo.jpg)
+
 # ChaoSlingr: Introducing Security into Chaos Testing
 
 ChaoSlingr is a Security Chaos Engineering Tool focused primarily on the experimentation on AWS Infrastructure to bring system security weaknesses to the forefront.

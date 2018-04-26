@@ -1,3 +1,20 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# Docstrings follow the numpy conventions described at:
+# https://numpydoc.readthedocs.io/en/latest/example.html#example
+""" Discovers the changes made by ``PortChange_Generatr`` and notifies a Slack Channel. 
+
+    Triggered by cloud watch events that are monitoring for security group changes. 
+    Once discovered a notification will be sent to the specified Slack Channel.
+
+    Raises
+    ------
+    HTTPError
+        If there is a problem with processing the request.
+    URLError
+        If there is a problem connecting to the server.
+"""
+
 from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
 import os

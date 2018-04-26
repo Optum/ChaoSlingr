@@ -1,3 +1,33 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# Docstrings follow the numpy conventions described at:
+# https://numpydoc.readthedocs.io/en/latest/example.html#example
+""" Picks a random port range to open for ingress with either TCP or UDP access.
+
+    Choose a random security group that is tagged with the specified opt-in tag. 
+
+    Parameters
+    ----------
+    SecurityGroupId : string
+        The ID of the security group to modify.
+    IpProtocol: string
+        The IP protocol to use.  Acceptable values are "tcp" and "udp".
+    FromPort: int
+        The (random) starting port of the range to open.
+    ToPort: int
+        The (random) ending port of the range to open.
+    IpRanges: string
+        The range of IP addresses allowed to access the opened ports.
+
+    Returns
+    -------
+    PortPackage : dict
+        The dictionary of items used as input values for the experiment.
+    SGlist : array
+        The list of security groups tagged for the experiment.
+
+"""
+
 from botocore.exceptions import ClientError
 from random import randint
 import random
@@ -21,7 +51,6 @@ def addport(sgidnum):
         'SecurityGroupId': sgidnum
     }
     return PortPackage
-
 
 # get security group permissions
 def getSecGroupIPPermissions(SGidNum):

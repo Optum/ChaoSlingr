@@ -1,3 +1,16 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# Docstrings follow the numpy conventions described at:
+# https://numpydoc.readthedocs.io/en/latest/example.html#example
+""" Apply changes to the security group.
+
+    Raises
+    ------
+    ClientError
+        If there is a problem with input data.
+
+"""
+
 import boto3
 from botocore.exceptions import ClientError
 import random

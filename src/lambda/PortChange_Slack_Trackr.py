@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 # Docstrings follow the numpy conventions described at:
 # https://numpydoc.readthedocs.io/en/latest/example.html#example
-""" Discovers the changes made by ``PortChange_Generatr`` and notifies a Slack Channel. 
+""" Discovers the changes made by ``PortChange_Generatr`` and notifies a Slack Channel.
 
-    Triggered by cloud watch events that are monitoring for security group changes. 
+    Triggered by cloud watch events that are monitoring for security group changes.
     Once discovered a notification will be sent to the specified Slack Channel.
 
     Raises
@@ -42,7 +42,7 @@ def lambda_handler(event, context):
             protocols.append("All Protocols")
         else:
             protocols.append(item['ipProtocol'])
-    
+
         if item['toPort'] == item['fromPort']:
             ports.append(item['toPort'])
         else:
@@ -54,6 +54,9 @@ def lambda_handler(event, context):
     elif 20 in ports or 21 in ports or 1433 in ports:
         severity = 'danger'
         message['Description'] = 'Ports changed are from AWS Trusted Advisory Warnings'
+    else:
+        severity = 'warning'
+        message['Description'] = 'Unexpected port changes'
     message = {
         'Name': event['detail']['userIdentity']['arn'].split(':').pop(),
         'Description': 'Warning: There were port changes made',
@@ -72,13 +75,13 @@ def lambda_handler(event, context):
             'text': json.dumps(message, indent=2, separators=(',', ': '))
         }]
     }
-    
+
     req = Request(
         url=HOOK_URL,
         data=json.dumps(slack_message).encode('utf-8'),
         headers={'content-type': 'application/json'}
     )
-    
+
     try:
         response = urlopen(req)
         response.read()

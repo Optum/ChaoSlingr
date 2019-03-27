@@ -62,7 +62,7 @@ The range of IP addresses allowed to access the opened ports.
 ```
 
 ### PortChange_Slack_Trackr
-PortChange_Slack_Trackr discovers the changes made by PortChanger_Generatr. Triggered by cloud watch events that are monitoring for security group changes. Once discovered a notification will be sent to specified Slack Channel
+PortChange_Slack_Trackr discovers the changes made by PortChanger_Generatr. Triggered by cloud watch events that are monitoring for security group changes. Once discovered a notification will be sent to specified Slack Channel.  See [Incoming Slack Webhooks](https://api.slack.com/incoming-webhooks) for information on how to set up a webhook if one is needed.  See [PortChange_Slack_Tracker Setup](../../docs/PortChange_Slack_Trackr_Setup.md) for information on how to configure the events that invoke PortChange_Slack_Trackr.
 
 #### Lambda Environment Variables
 

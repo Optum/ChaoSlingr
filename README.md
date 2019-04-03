@@ -37,7 +37,7 @@ The ChaoSlingr team is open to contributions to our project.  For more details, 
 * Rajitha Ramasayam (@rajitha-ramasayam)
 * David W Cloninger (@dcloninger)
 * Mike Zhou (@MichaelLiZhou)
-* Dan Brock (@dbrock14)
+* Dan Brock (@Bluephish)
 
 ### Special Thanks
 
